@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "goForYouRSelf",
+  "version": "1.0.0",
+  "description": "Removes the 'For You' tab (div[role='presentation']) from the tab list on x.com.",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://www.x.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
